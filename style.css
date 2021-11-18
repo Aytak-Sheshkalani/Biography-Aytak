@@ -38,7 +38,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     position: fixed;
     top: 0px;
     width: 100%;
@@ -81,11 +81,15 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.menu-container li.active:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .menu-container li.active {
     background-color: rgba(37, 37, 37, 0.9);
 }
 
-.menu-container li.active a {
+.menu-container a li.active {
     color: #fff;
 }
 
@@ -330,4 +334,127 @@ footer a:hover {
 
 .personal-intro {
     width: 70%;
+}
+
+
+/* Contact page */
+
+.contact-container-hero {
+    height: 100vh;
+    position: relative;
+}
+
+.contact-container-hero iframe {
+    float: left;
+}
+
+.contact-hero-info {
+    position: absolute;
+    padding: 20px;
+    width: 25%;
+    bottom: 20px;
+    right: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.contact-description {
+    display: flex;
+    align-items: center;
+}
+
+.contact-description .contact-icon {
+    width: 45px;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.contact-container-form {
+    padding: 20px 5%;
+    position: relative;
+    background: #3e3e3e;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #ea1d6f;
+    font-size: 26px;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #ea1d6f;
+}
+
+.app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-top: 40px;
+}
+
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+    color: #666;
+}
+
+.app-form-control:focus {
+    border-bottom-color: #ddd;
+}
+
+.app-form-button {
+    background: none;
+    border: none;
+    color: #ea1d6f;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-form-button:hover {
+    color: #b9134f;
 }
