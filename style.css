@@ -617,3 +617,9 @@ table.comparison-table {
 .video-content iframe{
     width: 100%;
 }
+/* prj page */
+.prj-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
