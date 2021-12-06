@@ -585,3 +585,35 @@ table.comparison-table {
   background-color: #2386be;
   color: white;
 }
+/* post 2 */
+.slides{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.slide-img{
+    width: calc(20% - 10px);
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: all ease-out 0.5s;
+    border: 1px #ddd solid;
+}
+.slide-img:hover{
+    transform: scale(1.2);
+}
+#expandedImg{
+    width: 100%;
+}
+#imgtext{
+    width: 100%;
+    line-height: 50px;
+    background-color: rgba(114, 114, 114,0.2);
+    text-align: center;
+}
+/* posts3 */
+.video-content{
+    text-align: center;
+}
+.video-content iframe{
+    width: 100%;
+}
